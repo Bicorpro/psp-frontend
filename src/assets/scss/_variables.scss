@@ -1,0 +1,27 @@
+$primary-color: #030303;
+$secondary-color: #dbd9d9;
+$accent-color: #42b983;
+
+form button {
+  color: white;
+  background-color: $accent-color;
+  border: none;
+  border-radius: 2em;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+
+  &:hover {
+    background-color: darken($accent-color, 5%);
+    padding: 1em 2.5em;
+  }
+}
+
+a {
+  color: darken($accent-color, 5%);
+
+  &:hover {
+    color: darken($accent-color, 15%);
+  }
+}
