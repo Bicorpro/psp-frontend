@@ -21,12 +21,12 @@
       place!
     </p>
     <p>
-      At <b>Bicorpro</b>, we want the best for our customers and that is why we
-      have created the ultimate Big Brother program.
+      At <b>Bicorpro</b>, we want the best for our customers and that is<br />
+      why we have created the ultimate Big Brother program.
     </p>
     <p>
       The era of freedom is over! This app will allow you to track your pets
-      24/7.
+      <b>24/7</b>.
     </p>
   </div>
 </template>
@@ -53,8 +53,21 @@ div.home {
   align-items: center;
 
   img.logo {
-    width: 35em;
+    width: 30em;
     padding-bottom: 3em;
+    transition-duration: 30s;
+
+    &:hover {
+      opacity: 0;
+    }
+  }
+
+  h1 {
+    color: $accent-color;
+  }
+
+  p {
+    padding: 0.4em 0;
   }
 }
 

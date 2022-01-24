@@ -29,7 +29,7 @@
           required
         />
       </p>
-      <p>Not your computer? Use a Private Browsing window to sign in.</p>
+      <p>Not your computer?<br />Use a Private Browsing window to sign in.</p>
       <button type="submit">Sign in</button>
       <p>
         New to PSP?
@@ -121,22 +121,6 @@ div.login {
   p.error {
     background-color: red;
     padding: 1.2em;
-  }
-}
-
-input[type="text"],
-input[type="password"] {
-  outline: none;
-  width: 25em;
-  padding: 0.7em 0.5em;
-  padding-left: 0.7em;
-  color: lighten($primary-color, 30%);
-  border: 1px solid lighten($primary-color, 30%);
-  border-radius: 0.2em;
-
-  &:focus,
-  &:hover {
-    border: solid 1px darken($accent-color, 10%);
   }
 }
 </style>

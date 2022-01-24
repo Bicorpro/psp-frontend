@@ -22,6 +22,9 @@ export default new Vuex.Store({
     addDevice(state, device: string): void {
       state.devices.push(device);
     },
+    removeDevice(state, device: string): void {
+      state.devices = state.devices.filter((dev) => dev !== device);
+    },
   },
   actions: {
     setConnected(ctx, connected): void {
