@@ -10,7 +10,8 @@
           v-model="username"
           name="username"
           minlength="3"
-          maxlength="15"
+          maxlength="30"
+          pattern="^[a-zA-Z0-9_-]{3,30}"
           autocomplete="off"
           placeholder="Enter your username or email address"
           required

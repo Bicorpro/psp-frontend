@@ -270,6 +270,10 @@ export default class Devices extends Vue {
   display: flex;
   justify-content: center;
 
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
+
   & > div {
     margin: 1em;
     padding: 1em;

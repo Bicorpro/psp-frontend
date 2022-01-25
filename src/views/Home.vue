@@ -52,27 +52,39 @@ div.home {
   justify-content: center;
   align-items: center;
 
-  img.logo {
-    width: 30em;
-    padding-bottom: 3em;
-    transition-duration: 30s;
+  @media (max-width: 525px) {
+    img.logo {
+      width: 20em;
+      padding-bottom: 3em;
+    }
+  }
 
-    &:hover {
-      opacity: 0;
+  @media (min-width: 526px) {
+    img.logo {
+      width: 30em;
+      padding-bottom: 3em;
+      transition: opacity 30s;
+
+      &:hover {
+        opacity: 0;
+      }
     }
   }
 
   h1 {
     color: $accent-color;
+    padding: 0 1em;
   }
 
   p {
-    padding: 0.4em 0;
+    padding: 0.4em 1em;
+    text-align: justify;
   }
 }
 
 ul {
   text-align: left;
+  padding: 0 1em;
   li {
     margin: 1em;
   }

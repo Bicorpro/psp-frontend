@@ -48,17 +48,28 @@ div.page-not-found {
   flex-direction: column;
   align-items: center;
 
-  img {
-    cursor: pointer;
-    width: 2em;
-    margin: 15em 0;
-    border-radius: 0.2em;
-    transition: 3s ease-in;
-
-    &:hover {
-      transform: rotate(2160deg);
-      width: 90em;
+  @media (max-width: 1100px) {
+    img {
+      cursor: pointer;
+      width: 20em;
       margin: 5em 0;
+      border-radius: 0.2em;
+    }
+  }
+
+  @media (min-width: 1101px) {
+    img {
+      cursor: pointer;
+      width: 2em;
+      margin: 15em 0;
+      border-radius: 0.2em;
+      transition: 3s ease-in;
+
+      &:hover {
+        transform: rotate(2160deg);
+        width: 90em;
+        margin: 5em 0;
+      }
     }
   }
 

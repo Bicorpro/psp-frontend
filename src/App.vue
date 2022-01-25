@@ -99,7 +99,7 @@ footer {
   padding: 3em 0;
 
   * {
-    padding: 0.5em 0;
+    padding: 0.5em 1em;
   }
 
   h3 {
